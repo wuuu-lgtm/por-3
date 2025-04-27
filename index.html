@@ -2,49 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Designer Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>My Portfolio</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm a passionate designer specializing in graphic design and UI/UX design.</p>
-  </section>
+<header>
+  <nav class="navbar">
+    <div class="logo">MyPortfolio</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section id="works">
-    <h2>My Works</h2>
-    <div class="gallery">
-      <div class="work-item">
-        <img src="work1.jpg" alt="Work 1">
-        <p>Work 1 Description</p>
+<section id="about" class="section">
+  <div class="content">
+    <h1>About Me</h1>
+    <p>Hello! I'm a creative designer passionate about making beautiful and functional designs. I specialize in UI/UX, branding, and web design.</p>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="content">
+    <h1>My Projects</h1>
+    <div class="projects-grid">
+      <div class="project-card">
+        <i class="fas fa-paint-brush"></i>
+        <h2>Design Project</h2>
+        <p>A creative branding project for a modern company.</p>
       </div>
-      <div class="work-item">
-        <img src="work2.jpg" alt="Work 2">
-        <p>Work 2 Description</p>
+      <div class="project-card">
+        <i class="fas fa-laptop-code"></i>
+        <h2>Web Project</h2>
+        <p>A responsive website built with HTML, CSS, and JS.</p>
       </div>
-      <!-- Add more works here -->
+      <div class="project-card">
+        <i class="fas fa-mobile-alt"></i>
+        <h2>App UI</h2>
+        <p>UI design for a mobile application focusing on user experience.</p>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
+<section id="contact" class="section">
+  <div class="content">
+    <h1>Contact Me</h1>
     <p>Email: example@example.com</p>
-  </section>
+    <p>Follow me on social media:</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-dribbble"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Tzu-Hua,Wu</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Tzu-Hua,Wu</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
