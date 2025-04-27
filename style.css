@@ -1,86 +1,84 @@
-/* Reset & Basics */
-* {
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Helvetica Neue', sans-serif;
+  background: #f9f9f9;
   color: #222;
-  background: #fafafa;
-  scroll-behavior: smooth;
-}
-
-/* Header */
-header {
-  position: fixed;
-  width: 100%;
-  background: white;
-  padding: 20px 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  z-index: 1000;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .container {
-  width: 90%;
-  margin: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.logo .cc {
+  color: #8a2be2; /* 你可以改成自己喜歡的亮色 */
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.main-content {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin: 3rem 0;
 }
 
-nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
+.left-column, .right-column {
+  flex: 1;
 }
 
-nav a:hover {
-  color: #00bcd4;
+.left-column ul, .right-column ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1rem;
 }
 
-/* Section */
-.section {
-  min-height: 100vh;
+.left-column li, .right-column li {
+  margin-bottom: 1rem;
+}
+
+.buttons {
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 100px 20px 40px 20px;
-  text-align: center;
-}
-
-.projects {
-  display: flex;
-  flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
+  margin: 3rem 0;
 }
 
-.project {
-  background: white;
-  padding: 20px;
-  border: 1px solid #eee;
-  border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+.btn {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn.dark {
+  background: #111;
+  color: white;
+}
+
+.btn.light {
+  border: 2px solid #111;
+  color: #111;
 }
 
 footer {
   text-align: center;
-  padding: 20px 0;
-  background: white;
-  font-size: 0.9rem;
-}
-.content {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.6s ease;
-}
-
-.content.visible {
-  opacity: 1;
-  transform: translateY(0);
+  font-size: 0.8rem;
+  margin-top: 2rem;
 }
