@@ -11,7 +11,18 @@ document.addEventListener('keydown', (e) => {
     const now = new Date();
     clock.textContent = now.toLocaleTimeString();
   }
-  
-  // 每秒更新一次
   setInterval(updateClock, 1000);
-  updateClock(); // 頁面一打開就更新一次
+  updateClock();
+  
+  // 滾動出現動畫
+  const elements = document.querySelectorAll('.content, .project-card');
+  
+  window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+      const elTop = el.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      if (elTop < windowHeight - 50) {
+        el.classList.add('visible');
+      }
+    });
+  });
