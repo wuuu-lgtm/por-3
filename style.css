@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Space Grotesk', sans-serif;
-  background: #E6F7F9; /* 淺藍色背景 */
+  background: #ffffff; /* 換回白色背景 */
   color: #222;
   transition: background 0.5s, color 0.5s;
 }
@@ -39,22 +39,8 @@ header {
   margin-top: 1rem;
 }
 
-/* Info Grid 兩欄排列 */
-.info-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin: 3rem 0;
-}
-
-.info-grid ul {
-  list-style: none;
-  padding: 0;
-  font-size: 1.2rem;
-}
-
-.info-grid li {
-  margin-bottom: 1rem;
+.main-content {
+  text-align: center;
 }
 
 /* Works 區塊 */
@@ -120,6 +106,31 @@ header {
   transform: scale(1.05);
   background-color: #0097a7;
   color: white;
+}
+
+/* Info Section在最底部 */
+.info-section {
+  padding: 60px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.info-grid {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.info-grid ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.info-grid li {
+  margin-bottom: 1rem;
 }
 
 footer {
