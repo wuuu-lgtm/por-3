@@ -4,15 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Studio - CC</title>
-  <!-- 載入漂亮字體 -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-  
-  <!-- Header 加了 content -->
+  <!-- Header -->
   <header class="content">
     <h1 class="logo">STUDIO—<span class="cc">CC</span></h1>
     <p class="description">
@@ -20,57 +18,63 @@
     </p>
   </header>
 
-  <!-- Main 加了 content -->
+  <!-- Main Content -->
   <main class="main-content content">
-    <div class="left-column">
-      <ul>
-        <li>Biography</li>
-        <li>Capabilities</li>
-        <li>Proficiencies</li>
-        <li>Awards & Press</li>
-      </ul>
-    </div>
-    <div class="right-column">
-      <ul>
-        <li>LinkedIn</li>
-        <li>Instagram</li>
-        <li>Dribbble</li>
-        <li>Github</li>
-        <li>3D Works</li>
-      </ul>
+    <div class="info-grid">
+      <div>
+        <ul>
+          <li>Biography</li>
+          <li>Capabilities</li>
+          <li>Proficiencies</li>
+          <li>Awards & Press</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>LinkedIn</li>
+          <li>Instagram</li>
+          <li>Dribbble</li>
+          <li>Github</li>
+          <li>3D Works</li>
+        </ul>
+      </div>
     </div>
   </main>
 
-  <!-- Works 區 加了 content -->
+  <!-- Works Section -->
   <section id="works" class="section content">
     <h2>Selected Works</h2>
     <div class="projects">
       <div class="project-card">
+        <img src="https://source.unsplash.com/400x300/?design,technology" alt="Project 1">
         <h3>Project 1</h3>
-        <p>Creative branding design for modern tech startup.</p>
+        <p>Creative branding design for a tech startup.</p>
       </div>
       <div class="project-card">
+        <img src="https://source.unsplash.com/400x300/?website,development" alt="Project 2">
         <h3>Project 2</h3>
-        <p>Responsive website development for e-commerce.</p>
+        <p>Responsive web development for e-commerce.</p>
       </div>
       <div class="project-card">
+        <img src="https://source.unsplash.com/400x300/?mobile,app" alt="Project 3">
         <h3>Project 3</h3>
-        <p>Mobile app UI/UX design for finance management.</p>
+        <p>Mobile app UI/UX design for finance app.</p>
       </div>
     </div>
   </section>
 
+  <!-- Buttons -->
   <div class="buttons">
     <a href="#works" class="btn dark">VIEW WORKS</a>
     <a href="#resume" class="btn light">RESUMÉ</a>
   </div>
 
-  <!-- Footer 加了 content -->
+  <!-- Footer -->
   <footer class="content">
     <p>© Studio—CC</p>
   </footer>
 
-  <!-- 時鐘 -->
+  <!-- Clock -->
   <div id="clock" class="clock"></div>
 
 </div>
