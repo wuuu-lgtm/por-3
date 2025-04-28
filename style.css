@@ -19,23 +19,23 @@ body.dark-mode {
   padding: 2rem;
 }
 
-/* Hero 區 */
-.hero-section {
+/* Header */
+header {
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #00bcd4, #ffffff);
-  color: #111;
-  animation: fadeIn 2s ease-in;
+  margin-bottom: 2rem;
 }
 
-.hero-title {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+.logo {
+  font-size: 10vw;
+  font-weight: bold;
+  letter-spacing: -2px;
+  color: #00bcd4;
 }
 
-.hero-subtitle {
+.description {
   font-size: 1.5rem;
-  font-weight: 300;
+  margin-top: 1rem;
+  min-height: 50px;
 }
 
 /* About Me 區 */
@@ -147,6 +147,40 @@ body.dark-mode {
   box-shadow: 0 16px 30px rgba(0,0,0,0.1);
 }
 
+/* 按鈕 */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 3rem 0;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn.dark {
+  background: #00bcd4;
+  color: white;
+}
+
+.btn.light {
+  border: 2px solid #00bcd4;
+  color: #00bcd4;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #0097a7;
+  color: white;
+}
+
 /* Contact 區 */
 .contact-buttons {
   display: flex;
@@ -181,10 +215,4 @@ footer {
   right: 20px;
   font-size: 1rem;
   font-family: monospace;
-}
-
-/* Hero 簡單淡入 */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
 }
