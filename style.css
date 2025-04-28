@@ -3,7 +3,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Space Grotesk', sans-serif;
-  background: #ffffff; /* 換回白色背景 */
+  background: #ffffff;
   color: #222;
   transition: background 0.5s, color 0.5s;
 }
@@ -30,8 +30,8 @@ header {
   letter-spacing: -2px;
 }
 
-.logo .cc {
-  color: #00bcd4; /* 藍綠色 */
+.logo {
+  color: #00bcd4;
 }
 
 .description {
@@ -39,8 +39,46 @@ header {
   margin-top: 1rem;
 }
 
-.main-content {
+/* About Me 區塊 */
+.about-section {
+  padding: 80px 20px;
+  background: #ffffff;
   text-align: center;
+}
+
+.about-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.about-image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #00bcd4;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
 }
 
 /* Works 區塊 */
@@ -108,7 +146,7 @@ header {
   color: white;
 }
 
-/* Info Section在最底部 */
+/* Info Section */
 .info-section {
   padding: 60px 20px;
   background: #ffffff;
@@ -140,7 +178,7 @@ footer {
 }
 
 /* 小動畫：滾動淡入 */
-.content, .project-card {
+.content, .project-card, .about-container {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.8s ease;

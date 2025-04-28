@@ -15,7 +15,7 @@ document.addEventListener('keydown', (e) => {
   updateClock();
   
   // 滾動出現動畫
-  const elements = document.querySelectorAll('.content, .project-card');
+  const elements = document.querySelectorAll('.content, .project-card, .about-container');
   
   window.addEventListener('scroll', () => {
     elements.forEach(el => {
@@ -26,3 +26,4 @@ document.addEventListener('keydown', (e) => {
       }
     });
   });
+  
