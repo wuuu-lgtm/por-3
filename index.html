@@ -1,9 +1,11 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tzu-Hua Wu Portfolio</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -20,12 +22,12 @@
   <section id="about" class="about-section content">
     <div class="about-container">
       <div class="about-image">
-        <img src="images/profile.jpg" alt="Tzu-Hua Wu">
+        <img src="images/profile.jpg" alt="Tzu-Hua Wu" onerror="this.onerror=null; this.src='images/default-profile.jpg';">
       </div>
       <div class="about-text">
         <h2>About Me</h2>
         <p>Hello! I'm <strong>Tzu-Hua Wu</strong>, a passionate Digital Designer and Creative Developer based in Taipei.</p>
-        <p>I specialize in crafting modern, clean, and user-centered web experiences. I believe that good design not only looks beautiful but also solves real problems and creates value for users.</p>
+        <p>I specialize in crafting modern, clean, and user-centered web experiences.</p>
         <p>With a background in UI/UX design and front-end development, I love bridging the gap between visual creativity and functional technology.</p>
       </div>
     </div>
@@ -35,21 +37,21 @@
   <section id="works" class="section content">
     <h2>Selected Works</h2>
     <div class="projects">
-      <div class="project-card">
+      <a href="project1.html" class="project-card">
         <img src="https://source.unsplash.com/400x300/?design,technology" alt="Project 1">
         <h3>Project 1</h3>
         <p>Creative branding design for a tech startup.</p>
-      </div>
-      <div class="project-card">
+      </a>
+      <a href="project2.html" class="project-card">
         <img src="https://source.unsplash.com/400x300/?website,development" alt="Project 2">
         <h3>Project 2</h3>
         <p>Responsive web development for e-commerce.</p>
-      </div>
-      <div class="project-card">
+      </a>
+      <a href="project3.html" class="project-card">
         <img src="https://source.unsplash.com/400x300/?mobile,app" alt="Project 3">
         <h3>Project 3</h3>
         <p>Mobile app UI/UX design for finance app.</p>
-      </div>
+      </a>
     </div>
   </section>
 
@@ -59,37 +61,12 @@
     <a href="#about" class="btn light">ABOUT ME</a>
   </div>
 
-  <!-- Info Section -->
-  <section class="info-section content">
-    <div class="info-grid">
-      <div>
-        <ul>
-          <li>Biography</li>
-          <li>Capabilities</li>
-          <li>Proficiencies</li>
-          <li>Awards & Press</li>
-        </ul>
-      </div>
-      <div>
-        <ul>
-          <li>LinkedIn</li>
-          <li>Instagram</li>
-          <li>Dribbble</li>
-          <li>Github</li>
-          <li>3D Works</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
   <!-- Footer -->
   <footer class="content">
     <p>© 2024 Tzu-Hua Wu</p>
   </footer>
 
-  <!-- Clock -->
   <div id="clock" class="clock"></div>
-
 </div>
 
 <script src="script.js"></script>

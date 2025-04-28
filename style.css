@@ -102,10 +102,21 @@ header {
 
 .project-card {
   background: white;
-  padding: 30px 20px;
+  padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  background-color: #e0f7fa; /* 淺藍 hover 背景 */
 }
 
 .project-card img {
@@ -204,4 +215,19 @@ footer {
   right: 20px;
   font-size: 1rem;
   font-family: monospace;
+}
+.full-width-image {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.project-description {
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
