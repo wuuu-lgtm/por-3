@@ -28,15 +28,13 @@ header {
   font-size: 10vw;
   font-weight: bold;
   letter-spacing: -2px;
-}
-
-.logo {
   color: #00bcd4;
 }
 
 .description {
   font-size: 1.5rem;
   margin-top: 1rem;
+  min-height: 50px;
 }
 
 /* About Me 區塊 */
@@ -62,6 +60,14 @@ header {
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.8s ease;
+}
+
+.about-image.visible img {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .about-text {
@@ -113,6 +119,7 @@ header {
   box-shadow: 0 16px 30px rgba(0,0,0,0.1);
 }
 
+/* 按鈕特效 */
 .buttons {
   display: flex;
   justify-content: center;
@@ -141,9 +148,10 @@ header {
 }
 
 .btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.1) rotate(2deg);
   background-color: #0097a7;
   color: white;
+  box-shadow: 0 8px 15px rgba(0, 188, 212, 0.4);
 }
 
 /* Info Section */
@@ -178,7 +186,7 @@ footer {
 }
 
 /* 小動畫：滾動淡入 */
-.content, .project-card, .about-container {
+.content, .project-card, .about-container, .about-image img {
   opacity: 0;
   transform: translateY(20px);
   transition: all 0.8s ease;

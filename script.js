@@ -15,7 +15,7 @@ document.addEventListener('keydown', (e) => {
   updateClock();
   
   // 滾動出現動畫
-  const elements = document.querySelectorAll('.content, .project-card, .about-container');
+  const elements = document.querySelectorAll('.content, .project-card, .about-container, .about-image img');
   
   window.addEventListener('scroll', () => {
     elements.forEach(el => {
@@ -27,3 +27,15 @@ document.addEventListener('keydown', (e) => {
     });
   });
   
+  // 打字動畫效果
+  const text = "Welcome to my portfolio showcasing creative design and front-end development.";
+  const typedText = document.getElementById("typed-text");
+  let idx = 0;
+  function typeEffect() {
+    if (idx < text.length) {
+      typedText.innerHTML += text[idx];
+      idx++;
+      setTimeout(typeEffect, 50);
+    }
+  }
+  typeEffect();
