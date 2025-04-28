@@ -19,25 +19,26 @@ body.dark-mode {
   padding: 2rem;
 }
 
-header {
+/* Hero 區 */
+.hero-section {
   text-align: center;
-  margin-bottom: 3rem;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #00bcd4, #ffffff);
+  color: #111;
+  animation: fadeIn 2s ease-in;
 }
 
-.logo {
-  font-size: 10vw;
-  font-weight: bold;
-  letter-spacing: -2px;
-  color: #00bcd4;
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
 }
 
-.description {
+.hero-subtitle {
   font-size: 1.5rem;
-  margin-top: 1rem;
-  min-height: 50px;
+  font-weight: 300;
 }
 
-/* About Me 區塊 */
+/* About Me 區 */
 .about-section {
   padding: 80px 20px;
   background: #ffffff;
@@ -87,7 +88,29 @@ header {
   margin-bottom: 1rem;
 }
 
-/* Works 區塊 */
+/* Skills 區 */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.skill-item {
+  background: #e0f7fa;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #00796b;
+  transition: transform 0.3s;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Works 區 */
 .section {
   text-align: center;
   padding: 80px 20px;
@@ -102,21 +125,15 @@ header {
 
 .project-card {
   background: white;
-  padding: 20px;
+  padding: 30px 20px;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
   text-decoration: none;
   color: inherit;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.project-card:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-  background-color: #e0f7fa; /* 淺藍 hover 背景 */
 }
 
 .project-card img {
@@ -126,70 +143,19 @@ header {
 }
 
 .project-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-8px) scale(1.03);
   box-shadow: 0 16px 30px rgba(0,0,0,0.1);
 }
 
-/* 按鈕特效 */
-.buttons {
+/* Contact 區 */
+.contact-buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
-  margin: 4rem 0;
+  margin-top: 20px;
 }
 
-.btn {
-  padding: 1rem 2rem;
-  text-decoration: none;
-  border-radius: 50px;
-  font-weight: bold;
-  text-align: center;
-  display: inline-block;
-  transition: all 0.3s ease;
-}
-
-.btn.dark {
-  background: #00bcd4;
-  color: white;
-}
-
-.btn.light {
-  border: 2px solid #00bcd4;
-  color: #00bcd4;
-}
-
-.btn:hover {
-  transform: scale(1.1) rotate(2deg);
-  background-color: #0097a7;
-  color: white;
-  box-shadow: 0 8px 15px rgba(0, 188, 212, 0.4);
-}
-
-/* Info Section */
-.info-section {
-  padding: 60px 20px;
-  background: #ffffff;
-  text-align: center;
-}
-
-.info-grid {
-  display: flex;
-  justify-content: center;
-  gap: 80px;
-  flex-wrap: wrap;
-}
-
-.info-grid ul {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-  font-size: 1.2rem;
-}
-
-.info-grid li {
-  margin-bottom: 1rem;
-}
-
+/* Footer */
 footer {
   text-align: center;
   font-size: 0.8rem;
@@ -216,71 +182,8 @@ footer {
   font-size: 1rem;
   font-family: monospace;
 }
-.full-width-image {
-  width: 100%;
-  max-width: 800px;
-  margin: 2rem auto;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
 
-.project-description {
-  text-align: center;
-  margin: 2rem;
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
-/* Hero 區 */
-.hero-section {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #00bcd4, #ffffff);
-  color: #111;
-  animation: fadeIn 2s ease-in;
-}
-
-.hero-title {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-subtitle {
-  font-size: 1.5rem;
-  font-weight: 300;
-}
-
-/* Skills 區 */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.skill-item {
-  background: #e0f7fa;
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: bold;
-  color: #00796b;
-  transition: transform 0.3s;
-}
-
-.skill-item:hover {
-  transform: translateY(-5px);
-}
-
-/* Contact 區 */
-.contact-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-/* 簡單動畫 */
+/* Hero 簡單淡入 */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-20px); }
   to { opacity: 1; transform: translateY(0); }
